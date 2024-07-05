@@ -1,0 +1,1208 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+:root {
+    --primary: rgb(72, 156, 72);
+}
+
+body {
+    background: rgb(0, 0, 0);
+    font-family: Poppins;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    z-index: 10;
+}
+
+.logo {
+    margin-top: 10px;
+    font-size: 40px;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.nav {
+    margin-top: 10px;
+    margin-right: 35%; 
+    display: flex;
+}
+
+.nav li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+.nav li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav li:hover a{
+    color: var(--primary)
+}
+
+.nav .Search {
+    margin-left: 45%;
+}
+
+
+.Search {
+    position: absolute;
+    width: 150px;
+    height: 46px;
+}
+
+.Search input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: transparent;
+    border: 1px solid rgba(247, 247, 247, 0.5s); 
+    outline: none;
+    border-radius: 3px;
+    padding: 0 10px 0 45px!important;
+    backdrop-filter: blur(05px);
+}
+
+.Search input::placeholder{
+    color: white;
+}
+
+.Search i {
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%);
+    left: 10px;
+    padding-right: 10px;
+    color: white;
+    border-right: 1px solid;
+}
+
+.banner {
+    background-size: cover;
+    background-position: center;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:url(imagess/chewing-gum-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.banner::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.4);
+}
+
+.content {
+    position: relative;
+    max-width: 550px;
+    display: none;
+    visibility: hidden;
+    transform: (0);
+    transition: 0.5s;
+}
+
+.content.active{
+    display: block;
+    visibility: visible;
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.movie-title {
+    max-width: 200px;
+    
+}
+
+.banner .content h4 {
+    color: rgba(255, 255, 255, 0.801);
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.banner .content h4 span{
+    padding: 0 10px;
+    border-right: 1px solid rgb(128, 128, 128,0.5);
+    font-family: Poppins;
+}
+
+.banner .content h3{
+    font-family: Poppins;
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.836);      
+}
+
+.banner .content h5{
+    font-family: Poppins;
+    font-size: 14px;
+    color: white;
+    font-weight: 400;
+    text-shadow: 2px 2px 10px rgb(0, 0, 0);   
+    max-width: 470px; 
+}
+
+.banner .content h6{
+    font-family: Poppins;
+    font-size: 12px;
+    color: white;
+    font-weight: 400;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.836);
+    
+}
+
+.banner .content h4 span:first-child{
+    padding-left: 0;
+}
+
+.banner .content h4 span:last-child{
+    border-right: none;
+}
+
+.banner .content h4 span i {
+    background: rgba(216, 56, 82, 0.753);
+    color: white;
+    padding: 0 8px;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+.banner .content p{
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.5em;
+    color: white;
+    margin: 10px 0 20px;
+}
+
+.banner .content .button {
+    position: relative;
+}
+.banner .content .button a{
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    background: rgba(216, 56, 82, 0.753);
+    color: white;
+    padding: 6px 20px;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-bottom: 6%;
+}
+
+.banner .content .button a:nth-child(1) {
+    background: rgba(216, 56, 82, 0.753);
+    border: 1px solid rgb(128, 128, 128,0.2);
+}
+
+.banner .content .button a:hover:nth-child(1) {
+    background:rgb(0, 0, 0,0.5);
+}
+
+.banner .content .button a:nth-child(2) {
+    background: rgb(0, 0, 0,0.5);
+    border: 1px solid rgb(128, 128, 128,0.2);
+}
+
+.banner .content .button a:hover:nth-child(2) {
+    background:rgba(216, 56, 82, 0.753);
+}
+
+.banner .carousel-box {
+    position: relative;
+    min-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 0, 0,0.5);
+    box-shadow: 20px 20px 50px rgb(0, 0, 0,0.5);
+    border: 1px solid rgba(225, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+}
+
+.carousel {
+    position: relative;
+    height: 390px;
+    perspective: 700;
+}
+
+.carousel .carousel-item {
+    width: 250px;
+    padding-top: 7%;
+    cursor: pointer;
+}
+
+.carousel .carousel-item img{
+    max-width: 235px;
+    border-radius: 10px;
+    transform: translateX(8px) translateY(-100px);
+    object-fit:cover;
+    object-position: center;
+}
+
+.play {
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    cursor: pointer !important;
+    transition: 0.3s;
+}
+
+.play i {
+    margin-right: 10px;
+    font-size: 20px;
+    cursor:pointer !important;
+}
+
+.play:hover {
+    color: rgb(215, 56, 82, 0.753);
+}
+
+.sci {
+    position: absolute;
+    bottom: 50px;
+    right: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.sci a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 18px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.sci a:hover {
+    color: rgb(215, 56, 82, 0.753);
+}
+
+
+.trailer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.trailer.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.trailer video {
+    max-width: 900px;
+    width: 90%;
+    outline: none;
+}
+
+.trailer .close {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 50px;
+    cursor: pointer;
+    filter: invert(1);
+}
+
+
+.banner .content {
+    display: none;
+  }
+  .banner .content.active {
+    display: block;
+  }
+
+.we-go-up .movie-title {
+    display: flex;
+    max-width: 150px;
+}
+
+.hot-sauce .movie-title {
+    display: flex;
+    max-width: 150px;
+}
+
+.hello-future .movie-title {
+    display: flex;
+    max-width: 150px;
+}
+
+.banner .mark h4 span i {
+    background: rgba(226, 30, 30, 0.753);
+    color: white;
+    padding: 0 8px;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+
+.banner .mark .button {
+    position: relative;
+}
+.banner .mark .button a{
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    background: rgba(226, 30, 30, 0.753);
+    color: white;
+    padding: 6px 20px;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-bottom: 6%;
+}
+
+.banner .mark .button a:nth-child(1) {
+    background:  rgba(226, 30, 30, 0.753);
+    border: 1px solid rgb(128, 128, 128,0.2);
+}
+
+.banner .mark .button a:hover:nth-child(1) {
+    background:rgb(0, 0, 0,0.5);
+}
+
+.banner .mark .button a:nth-child(2) {
+    background: rgb(0, 0, 0,0.5);
+    border: 1px solid rgb(128, 128, 128,0.2);
+}
+
+.banner .mark .button a:hover:nth-child(2) {
+    background: rgba(226, 30, 30, 0.753);
+}
+
+.banner .we-young h4 span i {
+    background: rgba(0, 33, 124, 0.753);
+    color: white;
+    padding: 0 8px;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+
+.banner .we-young .button {
+    position: relative;
+}
+.banner .we-young .button a{
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    background: rgba(0, 33, 124, 0.753);
+    color: white;
+    padding: 6px 20px;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-bottom: 6%;
+}
+
+.banner .we-young .button a:nth-child(1) {
+    background: rgba(0, 33, 124, 0.753);
+    border: 1px solid rgb(128, 128, 128,0.2);
+}
+
+.banner .we-young .button a:hover:nth-child(1) {
+    background:rgb(0, 0, 0,0.5);
+}
+
+.banner .we-young .button a:nth-child(2) {
+    background: rgb(0, 0, 0,0.5);
+    border: 1px solid rgb(128, 128, 128,0.2);
+}
+
+.banner .we-young .button a:hover:nth-child(2) {
+    background: rgba(0, 33, 124, 0.753);
+}
+
+.modal {
+    margin-left: 490px;
+    margin-top: 18.5px;
+    padding-top: px;
+    padding-right: 10px;
+    position: fixed;
+    width: 600px;
+    height: 390px;
+    top: 90px;
+    left: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+    background-color: rgba(3, 0, 0, 0.664);
+    border-radius: 8px;
+}
+
+.modal video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    outline: none;
+}
+
+
+.modal .close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 50px; /* Adjust width for larger close button */
+    height: 50px; /* Adjust height for larger close button */
+    cursor: pointer;
+    color: rgb(9, 255, 0);
+    font-size: 30px; /* Adjust font size for larger close button */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Rounded shape */
+    z-index: 2; /* Ensure close button is on top of the video */
+}
+
+.modal .close:hover {
+    color: black; /* Adjust text color on hover */
+}
+
+.banner .go h4 span i {
+    background: rgba(123, 251, 255, 0.644);
+    color: white;
+    padding: 0 8px;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+
+.banner .go .button {
+    position: relative;
+}
+.banner .go .button a{
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    background: rgba(123, 251, 255, 0.644);
+    color: white;
+    padding: 6px 20px;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-bottom: 6%;
+}
+
+.banner .go .button a:nth-child(1) {
+    background:  rgba(123, 251, 255, 0.644);
+    border: 1px solid rgb(128, 128, 128,0.2);
+}
+
+.banner .go .button a:hover:nth-child(1) {
+    background:rgb(0, 0, 0,0.5);
+}
+
+.banner .go .button a:nth-child(2) {
+    background: rgb(0, 0, 0,0.5);
+    border: 1px solid rgb(128, 128, 128,0.2);
+}
+
+.banner .go .button a:hover:nth-child(2) {
+    background:  rgba(123, 251, 255, 0.644);
+}
+
+.banner .we-go-up h4 span i {
+    background: rgba(255, 147, 5, 0.753);
+    color: white;
+    padding: 0 8px;
+    display: inline-block;
+    border-radius: 2px;
+}
+ 
+.banner .we-go-up .button {
+    position: relative;
+}
+.banner .we-go-up .button a{
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    background:  rgba(255, 147, 5, 0.753);
+    color: white;
+    padding: 6px 20px;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-bottom: 6%;
+}
+
+.banner .we-go-up .button a:nth-child(1) {
+    background:  rgba(255, 147, 5, 0.753);
+    border: 1px solid rgb(128, 128, 128,0.2);
+}
+
+.banner .we-go-up .button a:hover:nth-child(1) {
+    background:rgb(0, 0, 0,0.5);
+}
+
+.banner .we-go-up .button a:nth-child(2) {
+    background: rgb(0, 0, 0,0.5);
+    border: 1px solid rgb(128, 128, 128,0.2);
+}
+
+.banner .we-go-up .button a:hover:nth-child(2) {
+    background:  rgba(7, 3, 0, 0.753);
+}
+
+.istj .movie-title {
+    width: 140px;;
+}
+
+.smoothie .movie-title{
+    width: 200px;
+}
+
+
+.banner .boom h4 span i {
+    background: rgba(241, 23, 7, 0.753);
+    color: white;
+    padding: 0 8px;
+    display: inline-block;
+    border-radius: 2px;
+}
+ 
+.banner .boom .button {
+    position: relative;
+}
+.banner .boom .button a{
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    background:  rgba(241, 23, 7, 0.753);
+    color: white;
+    padding: 6px 20px;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-bottom: 6%;
+}
+
+.banner .boom .button a:nth-child(1) {
+    background: rgba(241, 23, 7, 0.753);
+    border: 1px solid rgb(128, 128, 128,0.2);
+}
+
+.banner .boom .button a:hover:nth-child(1) {
+    background:rgb(0, 0, 0,0.5);
+}
+
+.banner .boom .button a:nth-child(2) {
+    background: rgb(0, 0, 0,0.5);
+    border: 1px solid rgb(128, 128, 128,0.2);
+}
+
+.banner .boom .button a:hover:nth-child(2) {
+    background:  rgba(241, 23, 7, 0.753);
+}
+
+
+
+.banner .ridin h4 span i {
+    background: rgba(26, 43, 197, 0.753);
+    color: white;
+    padding: 0 8px;
+    display: inline-block;
+    border-radius: 2px;
+}
+ 
+.banner .ridin .button {
+    position: relative;
+}
+.banner .ridin .button a{
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    background:  rgba(26, 43, 197, 0.753);
+    color: white;
+    padding: 6px 20px;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-bottom: 6%;
+}
+
+.banner .ridin .button a:nth-child(1) {
+    background:rgba(26, 43, 197, 0.753);
+    border: 1px solid rgb(128, 128, 128,0.2);
+}
+
+.banner .ridin .button a:hover:nth-child(1) {
+    background:rgb(0, 0, 0,0.5);
+}
+
+.banner .ridin .button a:nth-child(2) {
+    background: rgb(0, 0, 0,0.5);
+    border: 1px solid rgb(128, 128, 128,0.2);
+}
+
+.banner .ridin .button a:hover:nth-child(2) {
+    background:  rgba(26, 43, 197, 0.753) ;
+}
+
+
+
+.banner .hot-sauce h4 span i {
+    background: rgba(177, 0, 0, 0.753);
+    color: white;
+    padding: 0 8px;
+    display: inline-block;
+    border-radius: 2px;
+}
+ 
+.banner .hot-sauce .button {
+    position: relative;
+}
+.banner .hot-sauce .button a{
+    position: relative;
+    background:  rgba(177, 0, 0, 0.753);
+    color: white;
+    padding: 6px 20px;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-bottom: 6%;
+}
+
+.banner .hot-sauce .button a:nth-child(1) {
+    background:rgba(177, 0, 0, 0.753);
+    border: 1px solid rgb(128, 128, 128,0.2);
+}
+
+.banner .hot-sauce .button a:hover:nth-child(1) {
+    background:rgb(0, 0, 0,0.5);
+}
+
+.banner .hot-sauce .button a:nth-child(2) {
+    background: rgb(0, 0, 0,0.5);
+    border: 1px solid rgb(128, 128, 128,0.2);
+}
+
+.banner .hot-sauce .button a:hover:nth-child(2) {
+    background:rgba(177, 0, 0, 0.753) ;
+}
+
+
+
+.banner .hello-future h4 span i {
+    background: rgba(0, 255, 255, 0.753);
+    color: white;
+    padding: 0 8px;
+    display: inline-block;
+    border-radius: 2px;
+}
+ 
+.banner .hello-future .button {
+    position: relative;
+}
+.banner .hello-future .button a{
+    position: relative;
+    background:  rgba(0, 255, 255, 0.753);
+    color: white;
+    padding: 6px 20px;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-bottom: 6%;
+}
+
+.banner .hello-future .button a:nth-child(1) {
+    background:rgba(0, 255, 255, 0.753);
+    border: 1px solid rgb(128, 128, 128,0.2);
+}
+
+.banner .hello-future .button a:hover:nth-child(1) {
+    background:rgb(0, 0, 0,0.5);
+}
+
+.banner .hello-future .button a:nth-child(2) {
+    background: rgb(0, 0, 0,0.5);
+    border: 1px solid rgb(128, 128, 128,0.2);
+}
+
+.banner .hello-future .button a:hover:nth-child(2) {
+    background:rgba(0, 255, 255, 0.753) ;
+}
+
+
+
+
+.banner .glitch-mode h4 span i {
+    background: rgba(255, 41, 173, 0.753);
+    color: white;
+    padding: 0 8px;
+    display: inline-block;
+    border-radius: 2px;
+}
+ 
+.banner .glitch-mode .button {
+    position: relative;
+}
+.banner .glitch-mode .button a{
+    position: relative;
+    background:  rgba(255, 41, 173, 0.753);
+    color: white;
+    padding: 6px 20px;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-bottom: 6%;
+}
+
+.banner .glitch-mode .button a:nth-child(1) {
+    background:rgba(255, 41, 173, 0.753);
+    border: 1px solid rgba(36, 5, 5, 0.2);
+}
+
+.banner .glitch-mode .button a:hover:nth-child(1) {
+    background:rgb(0, 0, 0,0.5);
+}
+
+.banner .glitch-mode .button a:nth-child(2) {
+    background: rgb(0, 0, 0,0.5);
+    border: 1px solid rgb(128, 128, 128,0.2);
+}
+
+.banner .glitch-mode .button a:hover:nth-child(2) {
+    background: rgba(255, 41, 173, 0.753) ;
+}
+
+
+
+.banner .beatbox h4 span i {
+    background: rgba(9, 34, 172, 0.753);
+    color: white;
+    padding: 0 8px;
+    display: inline-block;
+    border-radius: 2px;
+}
+ 
+.banner .beatbox .button {
+    position: relative;
+}
+.banner .beatbox .button a{
+    position: relative;
+    background:  rgba(9, 34, 172, 0.753);
+    color: white;
+    padding: 6px 20px;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-bottom: 6%;
+}
+
+.banner .beatbox .button a:nth-child(1) {
+    background: rgba(9, 34, 172, 0.753);
+    border: 1px solid rgba(36, 5, 5, 0.2);
+}
+
+.banner .beatbox .button a:hover:nth-child(1) {
+    background:rgb(0, 0, 0,0.5);
+}
+
+.banner .beatbox .button a:nth-child(2) {
+    background: rgb(0, 0, 0,0.5);
+    border: 1px solid rgb(128, 128, 128,0.2);
+}
+
+.banner .beatbox .button a:hover:nth-child(2) {
+    background:  rgba(9, 34, 172, 0.753) ;
+}
+
+
+
+
+.banner .candy h4 span i {
+    background: rgba(34, 203, 255, 0.753);
+    color: white;
+    padding: 0 8px;
+    display: inline-block;
+    border-radius: 2px;
+}
+ 
+.banner .candy .button {
+    position: relative;
+}
+.banner .candy .button a{
+    position: relative;
+    background: rgba(34, 203, 255, 0.753);
+    color: white;
+    padding: 6px 20px;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-bottom: 6%;
+}
+
+.banner .candy .button a:nth-child(1) {
+    background: rgba(34, 203, 255, 0.753);
+    border: 1px solid rgba(36, 5, 5, 0.2);
+}
+
+.banner .candy .button a:hover:nth-child(1) {
+    background:rgb(0, 0, 0,0.5);
+}
+
+.banner .candy .button a:nth-child(2) {
+    background: rgb(0, 0, 0,0.5);
+    border: 1px solid rgb(128, 128, 128,0.2);
+}
+
+.banner .candy .button a:hover:nth-child(2) {
+    background: rgba(34, 203, 255, 0.753);
+}
+
+
+.banner .best-friend-ever h4 span i {
+    background: rgba(172, 226, 22, 0.753);
+    color: white;
+    padding: 0 8px;
+    display: inline-block;
+    border-radius: 2px;
+}
+ 
+.banner .best-friend-ever .button {
+    position: relative;
+}
+.banner .best-friend-ever .button a{
+    position: relative;
+    background:rgba(172, 226, 22, 0.753);
+    color: white;
+    padding: 6px 20px;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-bottom: 6%;
+}
+
+.banner .best-friend-ever .button a:nth-child(1) {
+    background: rgba(172, 226, 22, 0.753);
+    border: 1px solid rgba(36, 5, 5, 0.2);
+}
+
+.banner .best-friend-ever .button a:hover:nth-child(1) {
+    background:rgb(0, 0, 0,0.5);
+}
+
+.banner .best-friend-ever .button a:nth-child(2) {
+    background: rgb(0, 0, 0,0.5);
+    border: 1px solid rgb(128, 128, 128,0.2);
+}
+
+.banner .best-friend-ever .button a:hover:nth-child(2) {
+    background:rgba(172, 226, 22, 0.753);
+}
+
+
+
+
+.banner .broken-melodies h4 span i {
+    background: rgba(255, 148, 9, 0.753);
+    color: white;
+    padding: 0 8px;
+    display: inline-block;
+    border-radius: 2px;
+}
+ 
+.banner .broken-melodies .button {
+    position: relative;
+}
+.banner .broken-melodies .button a{
+    position: relative;
+    background:rgba(255, 148, 9, 0.753);
+    color: white;
+    padding: 6px 20px;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-bottom: 6%;
+}
+
+.banner .broken-melodies .button a:nth-child(1) {
+    background: rgba(255, 148, 9, 0.753);
+    border: 1px solid rgba(36, 5, 5, 0.2);
+}
+
+.banner .broken-melodies .button a:hover:nth-child(1) {
+    background:rgb(0, 0, 0,0.5);
+}
+
+.banner .broken-melodies .button a:nth-child(2) {
+    background: rgb(0, 0, 0,0.5);
+    border: 1px solid rgb(128, 128, 128,0.2);
+}
+
+.banner .broken-melodies .button a:hover:nth-child(2) {
+    background:rgba(255, 148, 9, 0.753);
+}
+
+
+
+
+.banner .istj h4 span i {
+    background: rgba(235, 34, 158, 0.753);
+    color: white;
+    padding: 0 8px;
+    display: inline-block;
+    border-radius: 2px;
+}
+ 
+.banner .istj .button {
+    position: relative;
+}
+.banner .istj .button a{
+    position: relative;
+    background:rgba(235, 34, 158, 0.753);
+    color: white;
+    padding: 6px 20px;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-bottom: 6%;
+}
+
+.banner .istj .button a:nth-child(1) {
+    background:rgba(235, 34, 158, 0.753);
+    border: 1px solid rgba(36, 5, 5, 0.2);
+}
+
+.banner .istj .button a:hover:nth-child(1) {
+    background:rgb(0, 0, 0,0.5);
+}
+
+.banner .istj .button a:nth-child(2) {
+    background: rgb(0, 0, 0,0.5);
+    border: 1px solid rgb(128, 128, 128,0.2);
+}
+
+.banner .istj .button a:hover:nth-child(2) {
+    background:rgba(235, 34, 158, 0.753);
+}
+
+
+
+
+
+.banner .poison h4 span i {
+    background: rgba(231, 62, 32, 0.753);
+    color: white;
+    padding: 0 8px;
+    display: inline-block;
+    border-radius: 2px;
+}
+ 
+.banner .poison .button {
+    position: relative;
+}
+.banner .poison .button a{
+    position: relative;
+    background:rgba(231, 62, 32, 0.753);
+    color: white;
+    padding: 6px 20px;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-bottom: 6%;
+}
+
+.banner .poison .button a:nth-child(1) {
+    background:rgba(231, 62, 32, 0.753);
+    border: 1px solid rgba(36, 5, 5, 0.2);
+}
+
+.banner .poison .button a:hover:nth-child(1) {
+    background:rgb(0, 0, 0,0.5);
+}
+
+.banner .poison .button a:nth-child(2) {
+    background: rgb(0, 0, 0,0.5);
+    border: 1px solid rgb(128, 128, 128,0.2);
+}
+
+.banner .poison .button a:hover:nth-child(2) {
+    background:rgba(231, 62, 32, 0.753);
+}
+
+
+
+.banner .smoothie h4 span i {
+    background: rgba(40, 126, 40, 0.753);
+    color: white;
+    padding: 0 8px;
+    display: inline-block;
+    border-radius: 2px;
+}
+ 
+.banner .smoothie .button {
+    position: relative;
+}
+.banner .smoothie .button a{
+    position: relative;
+    background:rgba(40, 126, 40, 0.753);
+    color: white;
+    padding: 6px 20px;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-bottom: 6%;
+}
+
+.banner .smoothie .button a:nth-child(1) {
+    background:rgba(40, 126, 40, 0.753);
+    border: 1px solid rgba(36, 5, 5, 0.2);
+}
+
+.banner .smoothie .button a:hover:nth-child(1) {
+    background:rgb(0, 0, 0,0.5);
+}
+
+.banner .smoothie .button a:nth-child(2) {
+    background: rgb(0, 0, 0,0.5);
+    border: 1px solid rgb(128, 128, 128,0.2);
+}
+
+.banner .smoothie .button a:hover:nth-child(2) {
+    background:rgba(40, 126, 40, 0.753);
+}

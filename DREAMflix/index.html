@@ -1,0 +1,592 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Movie Website - Animated Landing Page</title>
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">DreamFlix</a>
+            <ul class="nav">
+                <li><a href="https://i.pinimg.com/550x/7c/f1/37/7cf1377727ee1765ccca9fc620d541e9.jpg" target="_blank" href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                <li><a href="https://i.pinimg.com/736x/94/6a/7b/946a7bea2d598c1ceabdcc3d253689b4.jpg" target="_blank" href="#">Czenies</a></li>
+                <li><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR04kCTTc5z7RqdMieUmzdL0O_MDtBPjvstM5nlBuG7TKR-93G5d3cJ-nScJvGaOGjutbA&usqp=CAU" target="_blank" href="#">Dreamies</a></li>
+                <li><a href="https://youtu.be/PVTLMMRytYU?si=iCkczHyzojABLbsp" target="_blank" href="#">Trend</a></li>
+                <li><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTs_3Dacf3uKkNGYN2tVd5tEzbBuyCqVFoWA&s" target="_blank" href="#">My List</a></li>
+                <div class="Search">
+                    <input type="text" placeholder="Search..."><i class="fa fa-search" aria-hidden="true"></i>
+                </div>  
+            </ul>
+        </header>
+        <div class="banner">
+            <div class="content jisung active">
+                <img src="/banner/cg banner.png" alt="" class="movie-title">
+                <h4>
+                    <span>2016</span><span><i>7+</i></span>
+                    <span>3m 21s</span><span>NCT DREAM</span>
+                </h4>
+                <p>
+                    <h3>Aug 24, 2016</h3>
+                    <h5>NCT (Neo Culture Technology)’s teenage boy team “NCT DREAM” has its their debut single “Chewing Gum”.
+                        Listen and download on iTunes & Apple Music, Spotify, and Google Play Music
+                    </h5>
+                    <h6>NCT DREAM 엔시티 드림 'Chewing Gum' MV ℗ S.M.Entertainment</h6>
+                </p>
+                <div class="button">
+                    <a href="#" onclick="openModal('/mvss/NCT DREAM 엔시티 드림 \'Chewing Gum\' MV.mp4')">
+                        <i class="fa fa-play" aria-hidden="true"></i> watch
+                    </a>
+                    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> my list</a>
+                </div>
+            </div>
+
+            <div class="content mark">
+                <img src="/banner/mfal-banner.png" alt="" class="movie-title">
+                <h4>
+                    <span>2017</span><span><i>7+</i></span>
+                    <span>3m 27s</span><span>NCT DREAM</span>
+                </h4>
+                <p>
+                    <h3>Feb 8, 2017</h3>
+                    <h5>NCT DREAM's 1st single “The First” has been released. 
+                        Listen and download on iTunes & Apple Music, Spotify, and Google Play Music 마지막 첫사랑 My First and Last
+                        NCT DREAM
+                        The First - The 1st Single Album     </h5>
+                    <h6>NCT DREAM 엔시티 드림 '마지막 첫사랑 (My First and Last)' MV ℗ S.M.Entertainment</h6>
+                </p>
+                <div class="button">
+                    <a href="#" onclick="openModal('/mvss/NCT DREAM 엔시티 드림 \'마지막 첫사랑 (My First and Last)\' MV.mp4')">
+                        <i class="fa fa-play" aria-hidden="true"></i> watch
+                    </a>
+                    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> my list</a>
+                </div>
+            </div>
+            <a href="#" class="play" onClick="toggleVideo();">
+                <i class="fa fa-play-circle" aria-hidden="true"></i> Watch Teaser
+            </a>
+       
+            <div class="content we-young">
+                <img src="/banner/we young banner.png" alt="" class="movie-title">
+                <h4>
+                    <span>2017</span><span><i>7+</i></span>
+                    <span>3m 58s</span><span>NCT DREAM</span>
+                </h4>
+                <p>
+                    <h3>Aug 17, 2017</h3>
+                    <h5> #NCTDREAM #6PM #1stMiniAlbum
+                        NCT DREAM’s first mini album "We Young" has been released. 
+                        Listen and download on iTunes & Apple Music, Spotify, and Google Play Music http://smarturl.it/NCTDREAM_WeYoung</h5>
+                    <h6>NCT DREAM 엔시티 드림 'We Young' MV  ℗ S.M.Entertainment</h6>
+                </p>
+                <div class="button">
+                    <a href="#" onclick="openModal('/mvss/NCT DREAM 엔시티 드림 \'We Young\' MV.mp4')">
+                        <i class="fa fa-play" aria-hidden="true"></i> watch
+                    </a>
+                    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> my list</a>
+                </div>
+            </div>
+            
+            <div class="content go">
+                <img src="/banner/go banner.png" alt="" class="movie-title">
+                <h4>
+                    <span>2018</span><span><i>7+</i></span>
+                    <span>3m 36s</span><span>NCT DREAM</span>
+                </h4>
+                <p>
+                    <h3>Mar 4, 2018</h3>
+                    <h5>"NCT 2018 EMPATHY" has been released!
+                        Listen and download on iTunes & Apple Music, Spotify, and Google Play Music http://smarturl.it/NCT2018EMPATHY</h5>
+                    <h6>NCT DREAM 엔시티 드림 'GO' MV ℗ S.M.Entertainment</h6>
+                </p>
+                <div class="button">
+                    <a href="#" onclick="openModal('/mvss/NCT DREAM 엔시티 드림 \'Go\' MV.mp4')">
+                        <i class="fa fa-play" aria-hidden="true"></i> watch
+                    </a>
+                    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> my list</a>
+                </div>
+            </div>
+
+            <div class="content we-go-up">
+                <img src="/banner/we go up banner.png" alt="" class="movie-title">
+                <h4>
+                    <span>2018</span><span><i>7+</i></span>
+                    <span>3m 05s</span><span>NCT DREAM</span>
+                </h4>
+                <p>
+                    <h3>Aug 30, 2018</h3>
+                    <h5>
+                        NCT DREAM's The 2nd Mini Album "We Go Up" is out!
+                        Listen and download on iTunes & Apple Music, Spotify, and Google Play Music </h5>
+                    <h6>NCT DREAM 엔시티 드림 'We Go Up' MV ℗ SM Entertainment</h6>
+                </p>
+                <div class="button">
+                    <a href="#" onclick="openModal('/mvss/NCT DREAM 엔시티 드림 \'We Go Up\' MV.mp4')">
+                        <i class="fa fa-play" aria-hidden="true"></i> watch
+                    </a>
+                    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> my list</a>
+                </div>
+            </div>
+
+            <div class="content boom">
+                <img src="/banner/boom banner.png" alt="" class="movie-title">
+                <h4>
+                    <span>2019</span><span><i>7+</i></span>
+                    <span>3m 17s</span><span>NCT DREAM</span>
+                </h4>
+                <p>
+                    <h3>Jul 25, 2019</h3>
+                    <h5>NCT DREAM's 3rd mini album "We Boom" is out!
+                        Listen and download on iTunes, Apple Music and Spotify </h5>
+                    <h6>NCT DREAM 엔시티 드림 'BOOM' MV ℗ SM Entertainment  </h6>
+                </p>
+                <div class="button">
+                    <a href="#" onclick="openModal('/mvss/NCT DREAM 엔시티 드림 \'BOOM\' MV.mp4')">
+                        <i class="fa fa-play" aria-hidden="true"></i> watch
+                    </a>
+                    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> my list</a>
+                </div>
+            </div>
+
+            <div class="content ridin">
+                <img src="/banner/ridin banner.png" alt="" class="movie-title">
+                <h4>
+                    <span>2020</span><span><i>7+</i></span>
+                    <span>3m 31s</span><span>NCT DREAM</span>
+                </h4>
+                <p>
+                    <h3>Apr 29, 2020</h3>
+                    <h5>NCT DREAM's new album "Reload" is out!
+                        Listen and download on your favorite  #Ridin #NCTDREAM #Reload platform: http://smarturl.it/NCTDREAM_Reload</h5>
+                    <h6>NCT DREAM 엔시티 드림 'Ridin'' MV ℗ SM Entertainment</h6>
+                </p>
+                <div class="button">
+                    <a href="#" onclick="openModal('/mvss/NCT DREAM 엔시티 드림 \'Ridin\' MV.mp4')">
+                        <i class="fa fa-play" aria-hidden="true"></i> watch
+                    </a>
+                    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> my list</a>
+                </div>
+            </div>
+
+            <div class="content hot-sauce">
+                    <img src="/banner/hot sauce banner.png" alt="" class="movie-title">
+                <h4>
+                    <span>2021</span><span><i>7+</i></span>
+                    <span>3m 31s</span><span>NCT DREAM</span>
+                </h4>
+                <p>
+                    <h3>May 10, 2021</h3>
+                    <h5>NCT DREAM's 1st album "Hot Sauce" is out!
+                        Listen and download on your favorite platform: https://smarturl.it/NCTDREAM_HotSauce </h5>                         </h5>
+                    <h6>NCT DREAM 엔시티 드림 '맛 (Hot Sauce)' MV ℗ SM Entertainment</h6>
+                </p>
+                <div class="button">
+                    <a href="#" onclick="openModal('/mvss/NCT DREAM 엔시티 드림 \'맛 (Hot Sauce)\' MV.mp4')">
+                        <i class="fa fa-play" aria-hidden="true"></i> watch
+                    </a>
+                    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> my list</a>
+                </div>
+            </div>
+            
+            <div class="content hello-future">
+                <img src="/banner/hello future banner.png" alt="" class="movie-title">
+                <h4>
+                    <span>2021</span><span><i>7+</i></span>
+                    <span>3m 52s</span><span>NCT DREAM</span>
+                </h4>
+                <p>
+                    <h3>Jun 28, 2021</h3>
+                    <h5>NCT DREAM's 1st Album Repackage "Hello Future" is out!
+                        Listen and download on your favorite platform: https://smarturl.it/NCTDREAM_HelloFuture </h5>
+                    <h6>NCT DREAM 엔시티 드림 'Hello Future' MV ℗ SM Entertainment</h6>
+                </p>
+                <div class="button">
+                    <a href="#" onclick="openModal('/mvss/NCT DREAM 엔시티 드림 \'Hello Future\' MV.mp4')">
+                        <i class="fa fa-play" aria-hidden="true"></i> watch
+                    </a>
+                    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> my list</a>
+                </div>
+            </div>
+
+            <div class="content glitch-mode">
+                <img src="/banner/glitch mode banner.png" alt="" class="movie-title">
+                <h4>
+                    <span>2022</span><span><i>7+</i></span>
+                    <span>3m 44s</span><span>NCT DREAM</span>
+                </h4>
+                <p>
+                    <h3>Mar 28, 2022</h3>
+                    <h5>NCT DREAM's 2nd album "Glitch Mode" is out!
+                        Listen and download on your favorite platform: https://smarturl.it/NCTDREAM_GlitchMode
+                        </h5>
+                    <h6>NCT DREAM 엔시티 드림 '버퍼링 (Glitch Mode)' MV ℗ SM Entertainment</h6>
+                </p>
+                <div class="button">
+                    <a href="#" onclick="openModal('/mvss/NCT DREAM 엔시티 드림 \'버퍼링 (Glitch Mode)\' MV.mp4')">
+                        <i class="fa fa-play" aria-hidden="true"></i> watch
+                    </a>
+                    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> my list</a>
+                </div>
+            </div>
+
+            <div class="content beatbox">
+                <img src="/banner/beatbox banner.png" alt="" class="movie-title">
+                <h4>
+                    <span>2022</span><span><i>7+</i></span>
+                    <span>3m 56s</span><span>NCT DREAM</span>
+                </h4>
+                <p>
+                    <h3>May 30, 2022</h3>
+                    <h5>NCT DREAM's 2nd album repackage "Beatbox" is out!
+                        Listen and download on your favorite platform: https://smarturl.it/NCTDREAM_Beatbox </h5>
+                    <h6>NCT DREAM 엔시티 드림 'Beatbox' MV ℗ SM Entertainment</h6>
+                </p>
+                <div class="button">
+                    <a href="#" onclick="openModal('/mvss/NCT DREAM 엔시티 드림 \'Beatbox\' MV.mp4')">
+                        <i class="fa fa-play" aria-hidden="true"></i> watch
+                    </a>
+                    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> my list</a>
+                </div>
+            </div>
+
+            <div class="content candy">
+                <img src="/banner/candy banner.png" alt="" class="movie-title">
+                <h4>
+                    <span>2022</span><span><i>7+</i></span>
+                    <span>3m 50s</span><span>NCT DREAM</span>
+                </h4>
+                <p>
+                    <h3>Dec 16, 2022</h3>
+                    <h5>NCT DREAM's Winter Special Mini Album "Candy" is out!
+                        Listen and download on your favorite platform: https://NCTDREAM.lnk.to/Candy</h5>
+                    <h6>NCT DREAM 엔시티 드림 'Candy' MV ℗ SM Entertainmentt</h6>
+                </p>
+                <div class="button">
+                    <a href="#" onclick="openModal('/mvss/NCT DREAM \'candy\' MV.mp4')">
+                        <i class="fa fa-play" aria-hidden="true"></i> watch
+                    </a>
+                    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> my list</a>
+                </div>     
+            </div>
+            
+            <div class="content best-friend-ever">
+                <img src="/banner/bfe banner.png" alt="" class="movie-title">
+                <h4>
+                    <span>2023</span><span><i>7+</i></span>
+                    <span>3m 40s</span><span>NCT DREAM</span>
+                </h4>
+                <p>
+                    <h3>Feb 8, 2023</h3>
+                    <h5>NCT DREAM Japan Debut Single ‘Best Friend Ever’ is out!
+                        Listen and download on iTunes & Apple Music, Spotify, and Google Play Music </h5>
+                    <h6>#NCTDREAM #BestFriendEver #BFE_NCTDREAMt</h6>
+                </p>
+                <div class="button">
+                    <a href="#" onclick="openModal('/mvss/NCT DREAM \'Best Friend Ever\' MV.mp4')">
+                        <i class="fa fa-play" aria-hidden="true"></i> watch
+                    </a>
+                    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> my list</a>
+                </div>  
+            </div>
+
+            <div class="content broken-melodies">
+                <img src="/banner/broken melodies banner.png" alt="" class="movie-title">
+                <h4>
+                    <span>2023</span><span><i>7+</i></span>
+                    <span>3m 52s</span><span>NCT DREAM</span>
+                </h4>
+                <p>
+                    <h3>Jun 19, 2023</h3>
+                    <h5>NCT DREAM's 3rd album 'ISTJ' is out!
+                        Listen and download on your favorite platform: https://NCTDREAM.lnk.to/ISTJ</h5>
+                    <h6>NCT DREAM 엔시티 드림 'Broken Melodies' MV ℗ SM Entertainment</h6>
+                </p>
+                <div class="button">
+                    <a href="#" onclick="openModal('/mvss/NCT DREAM 엔시티 드림 \'Broken Melodies\' MV.mp4')">
+                        <i class="fa fa-play" aria-hidden="true"></i> watch
+                    </a>
+                    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> my list</a>
+                </div>
+            </div>
+
+            <div class="content istj">
+                <img src="/banner/istj banner.png" alt="" class="movie-title">
+                <h4>
+                    <span>2023</span><span><i>7+</i></span>
+                    <span>3m 21s</span><span>NCT DREAM</span>
+                </h4>
+                <p>
+                    <h3>Jul 17, 2023 </h3>
+                    <h5>NCT DREAM's 3rd album 'ISTJ' is out!
+                        Listen and download on your favorite platform: https://NCTDREAM.lnk.to/ISTJ </h5>
+                    <h6>NCT DREAM 엔시티 드림 'ISTJ' MV ℗ SM Entertainment</h6>
+                </p>
+                <div class="button">
+                    <a href="#" onclick="openModal('/mvss/NCT DREAM 엔시티 드림 \'ISTJ\' MV.mp4')">
+                        <i class="fa fa-play" aria-hidden="true"></i> watch
+                    </a>
+                    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> my list</a>
+                </div>
+            </div>
+
+            <div class="content poison">
+                <img src="/banner/poison banner.png" alt="" class="movie-title">
+                <h4>
+                    <span>2023</span><span><i>7+</i></span>
+                    <span>1m 32s</span><span>NCT DREAM</span>
+                </h4>
+                <p>
+                    <h3>Jul 7, 2023</h3>
+                    <h5>NCT DREAM's 3rd album 'ISTJ' is out!
+                        Listen and download on your favorite platform: https://NCTDREAM.lnk.to/ISTJ </h5>
+                    <h6>NCT DREAM 엔시티 드림 'Smoothie' MV ℗ SM Entertainment</h6>
+                </p>
+                <div class="button">
+                    <a href="#" onclick="openModal('/mvss/NCT DREAM 엔시티 드림 \'Poison (모래성)\' Track Video.mp4')">
+                        <i class="fa fa-play" aria-hidden="true"></i> watch
+                    </a>
+                    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> my list</a>
+                </div>
+            </div>
+
+            <div class="content smoothie">
+                <img src="/banner/smoothie banner.png" alt="" class="movie-title">
+                <h4>
+                    <span>202</span><span><i>7+</i></span>
+                    <span>3m 32s</span><span>NCT DREAM</span>
+                </h4>
+                <p>
+                    <h3>Mar 25, 2024</h3>
+                    <h5>NCT DREAM's new album "DREAM( )SCAPE" is out!
+                        Listen and download on your favorite platform https://NCTDREAM.lnk.to/DREAM_SCAPE </h5>
+                    <h6>NCT DREAM 엔시티 드림 'Smoothie' MV ℗ SM Entertainment</h6>
+                </p>
+                <div class="button">
+                    <a href="#" onclick="openModal('/mvss/NCT DREAM \'Smoothie\' MV.mp4')">
+                        <i class="fa fa-play" aria-hidden="true"></i> watch
+                    </a>
+                    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> my list</a>
+                </div>
+            </div>
+            
+            <div class="carousel-box">
+                <div class="carousel">
+                    <div class="carousel-item" onClick="changeBg(0, 'jisung');">
+                        <img src="./thumbnails/jisung cg.jpeg" alt="">
+                    </div>
+                    <div class="carousel-item" onClick="changeBg( 1, 'mark');">
+                        <img src="./thumbnails/mark mfal.jpg" alt="">     
+                    </div>
+                    <div class="carousel-item" onClick="changeBg(2, 'we-young');">
+                        <img src="./thumbnails/jeno we young.jpg" alt="">
+                    </div>
+                    <div class="carousel-item" onClick="changeBg(3, 'go');">
+                        <img src="./thumbnails/jaemin go.jpg" alt="">
+                    </div>
+
+                    <div class="carousel-item" onClick="changeBg(4, 'we-go-up');">
+                        <img src="./thumbnails/renjun wgi.jpeg" alt="">
+                    </div>
+                    <div class="carousel-item" onClick="changeBg(5, 'boom');">
+                        <img src="./thumbnails/chenle boom.jpg" alt="">
+                    </div>
+                    <div class="carousel-item" onClick="changeBg(6, 'ridin');">
+                        <img src="./thumbnails/ridin jaemin.jpg" alt="">
+                    </div>
+                    <div class="carousel-item" onClick="changeBg(7, 'hot-sauce');">
+                        <img src="./thumbnails/mark hot sauce.jpg" alt="">
+                    </div>
+                    <div class="carousel-item" onClick="changeBg(8, 'hello-future');">
+                        <img src="./thumbnails/renjun hf.jpg" alt="">
+                    </div>
+                    <div class="carousel-item" onClick="changeBg(9);">
+                        <img src="./thumbnails/jisung gm.jpg" alt="">
+                    </div>
+                    <div class="carousel-item" onClick="changeBg(10);">
+                        <img src="./thumbnails/beatbox mark.png" alt="">
+                    </div>
+                    <div class="carousel-item" onClick="changeBg(11);">
+                        <img src="./thumbnails/jisung candy.jpeg" alt="">
+                    </div>
+                    <div class="carousel-item" onClick="changeBg(12);">
+                        <img src="./thumbnails/mark bfe.jpg" alt="">
+                    </div>
+                    <div class="carousel-item" onClick="changeBg(13);">
+                        <img src="./thumbnails/haechan bm.png" alt="">
+                    </div>
+                    <div class="carousel-item" onClick="changeBg(14);">
+                        <img src="./thumbnails/haechan istj.jpg" alt="">
+                    </div>
+                    <div class="carousel-item" onClick="changeBg(15);">
+                        <img src="./thumbnails/jeno poison.png" alt="">
+                    </div>
+                    <div class="carousel-item" onClick="changeBg(16);">
+                        <img src="./thumbnails/mark smoothie.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="trailer">
+                <video id="teaserVideo" src="mvss/NCT DREAM 'Graduation' MV.mp4" controls></video>
+                <img class="close" src="./thumbnails/x.png" alt="" onClick="toggleVideo();" />
+            </div>
+            <div id="videoModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <video id="modalVideo" controls></video>
+                </div>
+            </div>
+            <div id="videoModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <video id="modalVideo" controls></video>
+                </div>
+            </div>
+
+
+            <div id="content-container"></div>
+
+            <ul class="sci">
+                <li><a href="https://www.facebook.com/NCTDREAM.smtown" target="_blank" href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.instagram.com/nct_dream/?hl=en" target="blank" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="https://x.com/NCTsmtown_DREAM?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="./js/script.js"></script>
+        <script>
+
+            
+            $(document).ready(function(){
+                $('.carousel').carousel();
+            });
+
+            const toggleVideo = () => {
+                const trailer = document.querySelector('.trailer');
+                trailer.classList.toggle('active');
+                const video = trailer.querySelector('video');
+                if (trailer.classList.contains('active')) {
+                    video.play();
+                } else {
+                    video.pause();
+                    video.currentTime = 0;
+                }
+            };
+
+
+            
+            
+            
+            function changeBg(index) {
+            const backgroundImages = [
+                './imagess/chewing-gum-bg.jpg',
+                './imagess/mfal-bg.webp',
+                './imagess/we-young-bg.jpeg',
+                './imagess/go-bg.jpg',
+                './imagess/we-go-up-bg.jpeg',
+                './imagess/boom-bg.jpeg',
+                './imagess/ridin-bg.jpg',
+                './imagess/hot-sauce-bg.webp',
+                './imagess/hello-future-bg.jpg',
+                './imagess/glitch-mode-bg.jpg',
+                './imagess/beatbox-bg.jpg',
+                './imagess/candy-bg.jpg',
+                './imagess/bfe-bg.webp',
+                './imagess/broken-melodies-bg.jpg',
+                './imagess/istj-bg.jfif',
+                './imagess/poison-bg.png',
+                './imagess/smoothie-bg.webp'
+            ];
+
+            
+
+            const contents = document.querySelectorAll('.content');
+            contents.forEach((content, i) => {
+                if (i === index) {
+                    content.classList.add('active');
+                } else {
+                    content.classList.remove('active');
+                }
+            });
+            
+            const banner = document.querySelector('.banner');
+            banner.style.background = `url(${backgroundImages[index]}) no-repeat center center/cover`;
+    }
+    function openModal(videoSrc) {
+    // Get the modal and video elements
+    const modal = document.getElementById('videoModal');
+    const video = document.getElementById('modalVideo');
+
+    // Set the video source
+    video.src = videoSrc;
+
+    // Display the modal
+    modal.style.display = 'block';
+
+    // Play the video
+    video.play();
+}
+
+function closeModal() {
+    // Get the modal and video elements
+    const modal = document.getElementById('videoModal');
+    const video = document.getElementById('modalVideo');
+
+    // Hide the modal
+    modal.style.display = 'none';
+
+    // Pause the video
+    video.pause();
+
+    // Reset the video source to stop the video
+    video.src = '';
+}
+
+function openModal(videoUrl) {
+    var modal = document.getElementById('videoModal');
+    var modalVideo = modal.querySelector('video');
+
+    modalVideo.src = videoUrl;
+    modal.style.visibility = 'visible';
+    modal.style.opacity = 1;
+}
+
+function closeModal() {
+    var modal = document.getElementById('videoModal');
+    var modalVideo = modal.querySelector('video');
+
+    modalVideo.pause(); // Pause video if playing
+    modalVideo.currentTime = 0; // Reset video to beginning
+
+    modal.style.visibility = 'hidden';
+    modal.style.opacity = 0;
+}
+function openModal(videoUrl) {
+    var modal = document.getElementById('videoModal');
+    var modalVideo = document.getElementById('modalVideo');
+
+    // Set video source
+    modalVideo.src = videoUrl;
+
+    // Autoplay video
+    modalVideo.autoplay = true;
+    modalVideo.load(); // Ensure the video is loaded and ready to play
+
+    // Display the modal
+    modal.style.visibility = 'visible';
+    modal.style.opacity = '1';
+}
+
+
+    
+        </script>
+        <script src="js/script.js"></script>
+        <img src="banner/mfal banner.png" alt="">
+    </body>
+    
+    </html>
